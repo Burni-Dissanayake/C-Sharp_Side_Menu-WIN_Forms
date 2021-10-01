@@ -73,7 +73,16 @@ namespace SideBar_Menu
         //Food Click
         private void food_Click(object sender, EventArgs e)
         {
-            
+            indicator.Top = ((Control)sender).Top;
+
+            if (!mainpanel.Controls.Contains(Cookie.Instance))
+            {
+                mainpanel.Controls.Add(Cookie.Instance);
+                Cookie.Instance.Dock = DockStyle.Fill;
+                Cookie.Instance.BringToFront();
+            }
+            else
+                Cookie.Instance.BringToFront();
         }
     }
 }
