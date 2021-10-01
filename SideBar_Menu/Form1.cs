@@ -56,7 +56,18 @@ namespace SideBar_Menu
         //Home Click
         private void home_Click(object sender, EventArgs e)
         {
-            
+            indicator.Top = ((Control)sender).Top;
+
+
+
+            if (!mainpanel.Controls.Contains(Home.Instance))
+            {
+                mainpanel.Controls.Add(Home.Instance);
+                Home.Instance.Dock = DockStyle.Fill;
+                Home.Instance.BringToFront();
+            }
+            else
+                Home.Instance.BringToFront();
         }
 
         //Food Click
