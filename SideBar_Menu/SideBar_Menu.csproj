@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beverages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Beverages.Designer.cs">
+      <DependentUpon>Beverages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cookie.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Beverages.resx">
+      <DependentUpon>Beverages.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cookie.resx">
       <DependentUpon>Cookie.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\54247 [Converted]-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33363.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -151,7 +151,7 @@ namespace SideBar_Menu
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SideBar_Menu.Properties.Resources.Broken_oatmeal_cookies_set;
-            this.pictureBox1.Location = new System.Drawing.Point(333, 95);
+            this.pictureBox1.Location = new System.Drawing.Point(333, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(334, 265);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

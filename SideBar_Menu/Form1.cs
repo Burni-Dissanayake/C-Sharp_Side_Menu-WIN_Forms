@@ -84,5 +84,16 @@ namespace SideBar_Menu
             else
                 Cookie.Instance.BringToFront();
         }
+
+        //Beverages Click
+        private void beverages_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
