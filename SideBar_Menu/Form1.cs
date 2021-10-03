@@ -88,7 +88,16 @@ namespace SideBar_Menu
         //Beverages Click
         private void beverages_Click(object sender, EventArgs e)
         {
-            
+            indicator.Top = ((Control)sender).Top;
+
+            if (!mainpanel.Controls.Contains(Beverages.Instance))
+            {
+                mainpanel.Controls.Add(Beverages.Instance);
+                Beverages.Instance.Dock = DockStyle.Fill;
+                Beverages.Instance.BringToFront();
+            }
+            else
+                Beverages.Instance.BringToFront();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
